@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.profile-img {
+    width: 150px; /* Tamaño ajustado */
+    height: 150px; /* Tamaño ajustado */
+    object-fit: cover; /* Para recortar la imagen */
+    object-position: 60% 10%; /* Horizontal (60%) y vertical (10%) */
+    border-radius: 50%; /* Imagen redonda */
+    margin-bottom: 1em;
+    border: 3px solid #4CAF50; /* Borde opcional */
+}
+
+.profile h2 {
+    font-size: 1.8em;
+    color: #030303;
+}
+
+.profile p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Contact Section */
+#contacto {
+    margin-top: 3em;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2em;
+    color: #101010;
+    margin-bottom: 1em;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.contact-item i {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+}
+
+.contact-item a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section */
+#proyectos {
+    margin-top: 2em;
+    text-align: center; /* Centrado del título */
+}
+
+#proyectos h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Contenedor de los proyectos */
+#proyectos .proyecto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Espaciado entre los proyectos */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+#proyectos .proyecto {
+    background: #fff;
+    padding: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 22%; /* Cada proyecto ocupa un 22% del ancho */
+    min-width: 280px; /* Asegura que los proyectos no se vean demasiado pequeños */
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones para transición suave */
+}
+
+/* Efecto hover para resaltar el proyecto */
+#proyectos .proyecto:hover {
+    transform: translateY(-10px); /* Eleva el contenedor del proyecto hacia arriba */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efecto de difuminado con sombra */
+}
+
+/* Efecto para el texto del título del proyecto */
+#proyectos .proyecto h3 {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Cambiar color del título cuando pasa el mouse */
+#proyectos .proyecto:hover h3 {
+    color: #45a049; /* Color verde más oscuro cuando el proyecto es resaltado */
+}
+
+#proyectos .proyecto p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

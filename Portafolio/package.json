@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build:css": "lessc src/styles/main.less src/styles/main.css && cleancss -o dist/styles.min.css src/styles/main.css && purgecss --css dist/styles.min.css --content index.html -o dist/styles.purged.css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "less": "^4.2.2",
+    "purgecss": "^7.0.2"
+  }
+}

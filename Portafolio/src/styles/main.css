@@ -1,0 +1,103 @@
+/* Importar fuente */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v22/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
+/* Variables de color */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --font-family: 'Poppins', sans-serif;
+}
+/* Reset y estilos generales */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+/* Estilos del header y navegación */
+header {
+  background: var(--primary-color);
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background: #0056b3;
+  border-radius: 5px;
+}
+/* Estilos de las secciones */
+section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+}
+/* Estilos del footer */
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
